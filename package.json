@@ -1,0 +1,28 @@
+{
+  "name": "sofia-lashes",
+  "version": "1.0.0",
+  "description": "Static web page about lashes made for Sofia",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-css": "node-sass --include-path scss scss/main.scss css/style.css",
+    "watch-css": "nodemon -e scss -x \"npm run build-css\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lautaroroldan545/sofia-lashes.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lautaroroldan545/sofia-lashes/issues"
+  },
+  "homepage": "https://github.com/lautaroroldan545/sofia-lashes#readme",
+  "devDependencies": {
+    "node-sass": "^7.0.0",
+    "nodemon": "^2.0.15"
+  },
+  "dependencies": {
+    "normalize.css": "^8.0.1"
+  }
+}
