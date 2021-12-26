@@ -1,0 +1,89 @@
+@import url("https://fonts.googleapis.com/css2?family=Oooh+Baby&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@200;300;400;700&display=swap");
+*, *::after, *::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0; }
+
+:root {
+  --clr-primary: #febfbf;
+  --clr-secondary: #fff4ba;
+  --clr-dark: #1d2029;
+  --clr-white: #ffffff; }
+
+.linear-gradient {
+  background-image: linear-gradient(to bottom, var(--clr-white), var(--clr-white)); }
+
+h1 {
+  font-family: 'Oooh Baby', cursive; }
+
+h2, h3, h4, h5, p, a {
+  font-family: 'Roboto Slab', serif; }
+
+.header__logo {
+  position: absolute;
+  z-index: 2; }
+
+.background {
+  position: relative; }
+
+.background__img {
+  background-image: url(/assets/background.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 450px; }
+
+.background__text {
+  position: absolute;
+  top: 35%;
+  text-align: center;
+  width: 100%;
+  color: var(--clr-white); }
+  .background__text h1 {
+    font-size: 55px;
+    line-height: 0.5; }
+  .background__text h2 {
+    font-size: 25px;
+    font-weight: 400; }
+
+.main .main__title {
+  text-align: center; }
+  .main .main__title h2 {
+    font-weight: 400; }
+  .main .main__title h4 {
+    font-weight: 300; }
+  .main .main__title p {
+    font-weight: 300; }
+
+.main .main__imgs {
+  display: flex;
+  flex-direction: column; }
+  .main .main__imgs .mainCards {
+    flex-grow: 1;
+    flex-basis: 0;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column; }
+    .main .main__imgs .mainCards .mainCards__img img {
+      width: 100%; }
+    .main .main__imgs .mainCards .mainCards__info {
+      display: flex;
+      flex-direction: column;
+      position: absolute;
+      height: 250px;
+      z-index: 10;
+      text-align: center;
+      color: var(--clr-white); }
+      .main .main__imgs .mainCards .mainCards__info h3 {
+        margin-top: auto;
+        margin-bottom: auto; }
+      .main .main__imgs .mainCards .mainCards__info a {
+        padding: 0.6em;
+        border: 1px solid #1d2029;
+        text-decoration: none;
+        color: var(--clr-white);
+        box-shadow: 2px 4px 5px 0px #1d2029; }
